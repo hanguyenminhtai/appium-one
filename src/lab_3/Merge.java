@@ -4,7 +4,14 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Merge {
-    public static void mergeArray(int[] intArr1, int[] intArr2, int[] intArr3, int n, int m) {
+
+    public static void main(String[] args) {
+        int[] intArr1 = {1, 12, 16, 28, 34};
+        int[] intArr2 = {1, 13, 16, 27, 99};
+        int n = intArr1.length;
+        int m = intArr2.length;
+        int[] intArr3 = new int[n + m];
+
         int i = 0, j = 0, k = 0;
 
         while (i < n && j < m) {
@@ -22,19 +29,10 @@ public class Merge {
         while (j < m) {
             intArr3[k++] = intArr2[j++];
         }
-    }
-
-    public static void main(String[] args) {
-        int[] intArr1 = {1, 12, 16, 28, 34};
-        int[] intArr2 = {1, 13, 16, 27, 99};
-        int n = intArr1.length;
-        int m = intArr2.length;
-        int[] intArr3 = new int[n + m];
-
-        mergeArray(intArr1, intArr2, intArr3, n, m);
 
         System.out.println("Ket Qua:");
-        for (int i = 0; i < n + m; i++)
-            System.out.print(intArr3[i] + " ");
+        for (int p : intArr3) {
+            System.out.println(p);
+        }
     }
 }

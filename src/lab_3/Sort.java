@@ -3,6 +3,7 @@ package lab_3;
 import java.util.Arrays;
 
 public class Sort {
+
     public static void main(String[] args) {
         int[] intArr = {12, 34, 1, 16, 38};
         int n = intArr.length;
