@@ -8,7 +8,7 @@ public class AnimalController {
 
     public static String winnerRacing(List<Animal> animalList) {
         String winner = "";
-        int speedmax = animalList.get(0).getSpeed();
+        int speedmax = 0;
 
         for (Animal animal : animalList) {
             if (animal.getSpeed() > speedmax) {
