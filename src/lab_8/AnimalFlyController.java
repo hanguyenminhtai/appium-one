@@ -11,7 +11,7 @@ public class AnimalFlyController {
         //add animal flyable
         List<AnimalFly> animalFlyList = new ArrayList<>();
         for (AnimalFly animal : animalList) {
-            if (animal.isFlyable() == false)
+            if (!animal.isFlyable())
                 animalFlyList.add(animal);
         }
 
